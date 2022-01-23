@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Joke</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Nunito:ital,wght@1,400;1,500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="header">
-        <h1>Random Joke</h1>
+
+    <div class="wrapper">
+        <div class="header">
+            <h1>Random Joke</h1>
+        </div>
+        
+        <div class="joke">
+            <p><%=joke%></p>
+        </div>
+        
+        <div class="button">
+            <form action="/" method="post">
+                <button class="btn">Another Joke</button>
+            </form>
+        </div>
+        <!-- <footer class="footer">
+            Made by Subhani
+        </footer> -->
     </div>
     
-
-    <h2><%=joke%></h2>
-
-    <form action="/" method="post">
-        <button class="btn">Another Joke</button>
-    </form>
+    
     
 </body>
 </html>
