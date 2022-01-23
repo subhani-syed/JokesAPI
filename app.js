@@ -6,7 +6,7 @@ const https = require('https');
 const path =require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 3000||process.env.PORT;
 
 app.set('view engine','ejs');
 app.use(express.static('public'));
